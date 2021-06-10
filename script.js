@@ -17,8 +17,8 @@ console.log (parseInt(num1)+parseInt(num2));
 ////EJERCICIO 2////
 
 let edad = prompt ("Ingrese su edad");
-const año = 2021;
-let resultado = año - edad;
+const anio = 2021;
+let resultado = anio - edad;
 console.log ("Usted nació en " + resultado); 
 
 
@@ -79,7 +79,7 @@ alert (base*altura);
 
 let base = parseInt(prompt("Ingrese la medida de la base de un triángulo equilatero"));
 let altura = parseInt(prompt("Ingrese la medida de la altura de un triángulo equilatero"));
-alert (base*altura*2);  
+alert (base * altura / 2);  
 
 
 ////EJERCICIO 10////
@@ -100,17 +100,60 @@ alert ("Hola " + nombre + " usted nació en " + año);
 ////EJERCICIO 12////
 
 let nombre = prompt("Ingrese su nombre");
-let temperatura = parseInt(prompt("Ingrese una tempreratura en Celsius"));
-let conversor = parseInt((temperatura * 9/5) + 32);
+let temperatura = parseFloat(prompt("Ingrese una tempreratura en Celsius"));
+let conversor = parseFloat((temperatura * 9/5) + 32);
 console.log ("Hola " + nombre + ", la temperatura que ingresaste en Celsius es igual a " + conversor + " Fahrenheit"); 
 
 
 ////EJERCICIO 13////
 
 let nombre = prompt("Ingrese su nombre");
-let temperatura = parseInt(prompt("Ingrese una temperatura en Fahrenheit"));
-let conversor = parseInt((temperatura - 32) * 5/9);
-console.log ("Hola " + nombre + ", la temperatra que ingresaste en Fahrenheit es igual a " + conversor + " Celsius"); */
+let temperatura = parseFloat(prompt("Ingrese una temperatura en Fahrenheit"));
+let conversor = parseFloat((temperatura - 32) * 5/9);
+console.log ("Hola " + nombre + ", la temperatra que ingresaste en Fahrenheit es igual a " + conversor + " Celsius"); 
+
+
+////EJERCICIO 14////
+
+let numero = parseInt(prompt("Ingrese un numero"));
+let cuenta = (((numero + 5) * 10) % 3);
+console.log(cuenta);  
+
+
+//////BONUS//////
+
+//EJERCICIO 0//
+
+let num1 = prompt("Ingrese un numero");
+let num2 = prompt("Ingrese otro numero");
+let suma = (num1 + num2);
+alert("La suma de sus cifras es " + suma);  
+
+
+//EJERCICIO 1//
+
+let segundo = parseInt(86400);
+let dias = parseInt(prompt("Ingrese una cantidad de dias"));
+let conversor = (dias * segundo);
+alert(dias + " dias es igual a " + conversor + " segundos");  
+
+
+//EJERCICIO 3//
+
+let sueldo = parseInt(prompt("Por favor ingrese su sueldo bruto"));
+let obraSoc= parseInt((sueldo * 3) / 100);
+let ley = parseInt((sueldo * 3) / 100);
+let jubilacion = parseInt((sueldo * 11) / 100);
+let neto = parseInt(sueldo - obraSoc - ley - jubilacion);
+alert("Su sueldo neto es $" + neto);  */
+
+
+
+
+
+
+
+
 
 
 
